@@ -36,13 +36,13 @@ const Textarea = ({ className = "", ...props }) => (
   ></textarea>
 );
 
-const logo = "/Double_A.jpg";
+const logo = "/Double_A_Logo_NoText.png"; // Use the updated logo file name
 
 const Navbar = () => (
   <nav className="flex items-center justify-between p-4 shadow-md bg-white">
     <div className="flex items-center space-x-4">
       <img src={logo} alt="Double A Logo" className="h-12 w-auto rounded" />
-      <h1 className="text-xl font-bold text-orange-600">Double A Properties and Homes Ltd.</h1>
+      <h1 className="text-xl font-bold text-orange-600">Double A Properties and Homes</h1>
     </div>
     <div className="space-x-4">
       <Link to="/">Home</Link>
@@ -58,7 +58,10 @@ const Navbar = () => (
 const Home = () => (
   <Card className="m-8 p-6">
     <CardContent>
-      <h2 className="text-2xl font-semibold mb-4">Welcome to Double A Properties and Homes Ltd.</h2>
+      <div className="flex flex-col items-center mb-6">
+        <img src={logo} alt="Double A Logo" className="h-28 w-auto mb-4" />
+        <h2 className="text-2xl font-semibold">Welcome to Double A Properties and Homes</h2>
+      </div>
       <p>Creating value with integrity — your trusted partner in real estate development, sales, and property management.</p>
     </CardContent>
   </Card>
